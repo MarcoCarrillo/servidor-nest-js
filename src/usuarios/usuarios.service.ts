@@ -28,7 +28,7 @@ export class UsuariosService {
     }
 
     async actualizarUsuario(usuario:Usuario){
-        await this.rep.save(usuario);
+        await this.rep.update({id:usuario.id}, usuario);
     }
 
     async borrarUsuario(usuario:Usuario){

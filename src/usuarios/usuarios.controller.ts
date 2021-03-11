@@ -9,6 +9,11 @@ export class UsuariosController {
 
     }
 
+    @Get()
+    getAll(@Param() params){
+        return this.servicio.obtenerUsuarios(params.id);
+    }
+
     @Get(':id')
     get(@Param() params){
         return this.servicio.obtenerUsuario(params.id);
