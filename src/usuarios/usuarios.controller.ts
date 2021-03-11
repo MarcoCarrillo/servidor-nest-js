@@ -31,7 +31,7 @@ export class UsuariosController {
 
     @Delete(':id')
     delete(@Param() params){
-        return this.servicio.borrarUsuario(params);
+        return this.servicio.borrarUsuario(params.id);
     }
 }
 
