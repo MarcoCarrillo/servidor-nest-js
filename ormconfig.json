@@ -1,12 +1,17 @@
 {
-    "type": "mysql",
-    "host": "localhost",
-    "port":"3306",
-    "username": "root",
-    "password": "maiz1972",
-    "database": "nestjs_server",
+    "type": "postgres",
+    "host": "ec2-54-161-239-198.compute-1.amazonaws.com",
+    "port":"5432",
+    "username": "tsgqaplocdmfqq",
+    "password": "12ffc59ad976e7850a34acf232c9b0fba0ac9a320c7e323d3623c098ad4d865d",
+    "database": "dd524aos34m7uq",
+    "extra":{
+       "ssl":{
+           "rejectUnauthorized":false
+        }
+    },  
     "entities":[
         "dist/**/**.entity{.ts,.js}"
     ],
-    "synchronize": false
+    "synchronize": true
 }
